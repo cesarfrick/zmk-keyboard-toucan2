@@ -24,8 +24,8 @@
       delete_forward_combo {
         bindigns = <&kp DEL>;
         key-positions = <12 11>;
-      }
-    }
+      };
+    };
 
     keymap {
         compatible = "zmk,keymap";
