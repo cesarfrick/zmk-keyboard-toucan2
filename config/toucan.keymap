@@ -22,7 +22,7 @@
       compatible = "zmk,combos";
 
       delete_forward_combo {
-        bindigns = <&kp DEL>;
+        bindings = <&kp DEL>;
         key-positions = <12 11>;
       };
     };
