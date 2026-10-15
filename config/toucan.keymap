@@ -21,9 +21,10 @@
     combos {
         compatible = "zmk,combos";
 
-        delete_forward_combo {
+        forward_del_combo {
+            timeout-ms = <50>;
+            key-positions = <11 12>;
             bindings = <&kp DEL>;
-            key-positions = <12 11>;
         };
     };
 
