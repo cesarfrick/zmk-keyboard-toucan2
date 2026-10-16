@@ -21,7 +21,7 @@
         esc_shift: esc_shift {
             compatible = "zmk,behavior-hold-tap";
             label = "ESC_SHIFT";
-            bindings = <&caps_word>, <&kp>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <100>;
@@ -32,7 +32,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SHIFT_CAPS";
             #binding-cells = <0>;
-            bindings = <&kp LSHFT>, <&kp CAPS>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LSHIFT>, <&kt CAPS>;
         };
     };
 
