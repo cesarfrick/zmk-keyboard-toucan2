@@ -33,13 +33,7 @@
             label = "SHIFT_CAPS";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LSHIFT>, <&kp CAPS>;
-        };
-        test_tap: test_tap {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LSHIFT>, <&kp CAPSLOCK>;
+            bindings = <&mt LSHIFT LSHIFT>, <&kp CAPS>;
         };
     };
 
@@ -69,7 +63,7 @@
             display-name = "BASE";
             bindings = <
                 &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-                &test_tap &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp ESC
+                &shift_caps &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp ESC
                 &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp SQT
                                 &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
             >;
